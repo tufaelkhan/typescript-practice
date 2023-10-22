@@ -28,9 +28,21 @@
 // let mySize: Size = Size.Medium;
 // console.log(mySize);
 
-function calculateTax(income: number, taxYear: number): number {
-    if(taxYear <  2023)
-        return income * 1.2
-    return income * 1.3
-}
-calculateTax(10_000, 2023)
+// function calculateTax(income: number, taxYear = 2022): number {
+//     if(taxYear <  2023)
+//         return income * 1.2
+//     return income * 1.3
+// }
+// calculateTax(10_000)
+
+// let employee: {
+//     readonly id: number,
+//     name: string,
+//     retire: (date: Date) => void
+// } = {
+//     id: 1, 
+//     name: 'khan', 
+//     retire: (date: Date) => {
+//     console.log(date)
+// }}
+

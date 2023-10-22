@@ -17,4 +17,7 @@
 // let numbers: number[] = []
 // numbers[0] = 1;
 // numbers.forEach((element => element.toFixed));
-let user: [number, string] = [3, "khan"]
+// let user: [number, string, boolean, number] = [3, "khan", true, 0]
+// user.push(1)
+
+

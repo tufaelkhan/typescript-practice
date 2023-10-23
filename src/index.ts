@@ -74,10 +74,21 @@
 
 // type Metric = 'cm' | 'inch';
 
-function greet(name: string | null | undefined){
-    if(name)
-    console.log(name.toUpperCase());
-    else
-    console.log("khan");
+// function greet(name: string | null | undefined){
+//     if(name)
+//     console.log(name.toUpperCase());
+//     else
+//     console.log("khan");
+// }
+// greet(undefined)
+
+type Customer = {
+    birthday: Date
 }
-greet(undefined)
+function getCustomer(id: number): Customer | null | undefined {
+    return id === 0 ? null : {birthday: new Date()}
+}
+let customer = getCustomer(0)
+// if(customer !== null && customer !== undefined)
+// Optional property access operator
+console.log(customer.birthday);

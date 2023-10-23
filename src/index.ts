@@ -83,7 +83,7 @@
 // greet(undefined)
 
 type Customer = {
-    birthday: Date
+    birthday?: Date
 }
 function getCustomer(id: number): Customer | null | undefined {
     return id === 0 ? null : {birthday: new Date()}
@@ -91,4 +91,10 @@ function getCustomer(id: number): Customer | null | undefined {
 let customer = getCustomer(0)
 // if(customer !== null && customer !== undefined)
 // Optional property access operator
-console.log(customer.birthday);
+console.log(customer?.birthday?.getFullYear());
+
+// Optional element access operator
+
+// optional call
+let log: any = null;
+log?.('a')

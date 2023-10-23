@@ -35,14 +35,25 @@
 // }
 // calculateTax(10_000)
 
-// let employee: {
+// type Employee = {
 //     readonly id: number,
 //     name: string,
 //     retire: (date: Date) => void
-// } = {
+// }
+// let employee:Employee = {
 //     id: 1, 
 //     name: 'khan', 
 //     retire: (date: Date) => {
 //     console.log(date)
 // }}
+
+// function kgTobs(weight: number | string): number {
+//     if(typeof weight === 'number')
+//     return weight = 2.2
+// else 
+// return parseInt(weight) * 2.2;
+// }
+// kgTobs(10);
+// kgTobs("30kg")
+
 
